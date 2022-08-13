@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGUS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico.png">
+</head>
+<body>
+    <input type="checkbox" aria-label="close-menu" id="close-menu" class="close-menu" role="button" checked>
+    <label for="close-menu" title="close-menu" class="close-menu-label">
+        <div class="menu-icon">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </label>
+    <aside class="menu white-bg"> 
+        <div class="main-content menu-content" onclick="getElementById('close-menu').checked = false;">   
+            <h1>
+                <a href="#home">LOGUS</a>
+            </h1>
+
+            <nav onclick="getElementById('close-menu').checked = false;">
+                <ul>
+                    <li><a href="#intro">INTRODUÇÃO</a></li>
+                    <li><a href="#highlights">DESTAQUES</a></li>
+                    <li><a href="#gallery">GALERIA</a></li>
+                    <li><a href="#about">SOBRE</a></li>
+                    <li><a href="#pricing">PREÇOS</a></li>
+                    <li><a href="#contact">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <section id="home" class="section main-bg" >
+        <div class="main-content home-content">
+            <div class="home-text-content">
+                <h2>Come and get your love, come and get your love, come and get your love now!</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit esse id eligendi saepe, magni nostrum quam distinctio molestias totam consequatur beatae mollitia necessitatibus voluptas doloribus quo dignissimos nemo fuga! Labore.</p>
+            </div>
+            <div class="home-img">
+                <img src="./assets/img/undraw_photo_session_re_c0cp.svg" alt="A figure of a man handing a heart-shaped baloon to a woman.">
+            </div>
+        </div>
+
+    </section>
+    
+    <section id="intro" class="section white-bg" >
+        <div class="intro-content main-content">
+            <h2>News coverage and some surprises</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ratione ex similique adipisci sed blanditiis quam error deleniti tempora sunt, aliquid laborum iure, ducimus provident quod debitis? Quia, et est.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos repellat quo provident fugit voluptatem dolorem accusamus omnis alias recusandae, ut, consequuntur iusto saepe numquam obcaecati neque possimus quod nemo?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, et. Repellat itaque ipsa totam. Quis dignissimos quod quidem provident minus deserunt accusamus labore, minima impedit sed magni atque fugit tempora!</p>
+        </div> <!-- Intro -->
+    </section>
+
+    <section id="highlights" class="section grid-one-bg grid-one" >
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-heading">Destaques</h2>
+            <p class="grid-description">Alguns dos projetos recentes realizados pela LOGUS</p>
+            <div class="grid">
+                <article>
+                    <h3>Projeto</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ducimus culpa ullam temporibus ea, sunt corporis distinctio accusantium sapiente ad laboriosam eaque aliquid nobis quis, iusto asperiores numquam, tenetur quae?</p>
+                </article>
+                <article>
+                    <h3>Projeto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi neque quo enim nesciunt quia perspiciatis libero, similique assumenda architecto expedita voluptatem nostrum nihil distinctio aspernatur adipisci reiciendis tempore aut maxime.</p>
+                </article>
+                <article>
+                    <h3>Projeto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iusto tempora assumenda deserunt quod vel explicabo laborum. Labore excepturi, tenetur mollitia eveniet commodi laudantium reiciendis culpa fugit consectetur animi recusandae!</p>
+                </article>
+            </div>
+        </div>
+    </section> 
+ 
+    <section id="gallery" class="section white-bg gallery" >
+        <div class="gallery-content main-content">
+            <h2 class="gallery-main-heading">Galeria</h2>
+            <p class="gallery-description">Aqui estão algumas das minhas imagens favoritas</p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r1" alt="">
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r2" alt="">
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r3" alt="">
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r4" alt="">
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r5" alt="">
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r6" alt="">
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section id="about" class="section grid-two-bg grid-one" >
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-heading">My Grid</h2>
+            <p class="grid-description">Breve descrição</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ducimus culpa ullam temporibus ea, sunt corporis distinctio accusantium sapiente ad laboriosam eaque aliquid nobis quis, iusto asperiores numquam, tenetur quae?</p>
+                </article>
+                <article>
+                    <h3>Teste</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi neque quo enim nesciunt quia perspiciatis libero, similique assumenda architecto expedita voluptatem nostrum nihil distinctio aspernatur adipisci reiciendis tempore aut maxime.</p>
+                </article>
+                <article>
+                    <h3>Teste</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi neque quo enim nesciunt quia perspiciatis libero, similique assumenda architecto expedita voluptatem nostrum nihil distinctio aspernatur adipisci reiciendis tempore aut maxime.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section white-bg" >
+        <div class="intro-content main-content">
+            <h2>Preços</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic corrupti enim ex perferendis molestiae autem, laboriosam animi laudantium excepturi officia repellendus totam odio fugiat optio quas maiores, voluptatum voluptatibus praesentium.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe in similique, veniam temporibus expedita unde ad impedit. Placeat facilis id inventore alias obcaecati neque tempore vero quo dolorum fuga?</p>
+           <!-- <div class="table-responsive">
+                <table>
+                    <caption>Tabela de preços</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Título 1</th>
+                            <th>Título 2</th>
+                            <th>Título 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Conteúdo 1</td>
+                            <td>Conteúdo 2</td>
+                            <td>Conteúdo 3</td>
+                        </tr>
+                        <tr>
+                            <td>Conteúdo 1</td>
+                            <td>Conteúdo 2</td>
+                            <td>Conteúdo 3</td>
+                        </tr>
+                        <tr>
+                            <td>Conteúdo 1</td>
+                            <td>Conteúdo 2</td>
+                            <td>Conteúdo 3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Rodapé</td>
+                        </tr>
+                    </tfoot>
+                </table>-->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-bg" >
+        <div class="main-content contact-content">
+            <div class="contact-text-content">
+                <h2>Come and get your love, come and get your love, come and get your love now!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere non accusamus optio nobis, ea hic sed excepturi consequatur porro nostrum ab cumque veniam ratione neque consectetur omnis eos! Autem, aut?</p>
+            </div>
+
+        <div class="contact-form">
+            <fieldset class="form-grid">
+                <legend>Entre em contato conosco</legend>
+                <div class="form-group">
+                    <label for="first-name">Nome: </label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                <label for="last-name">Sobrenome: </label>
+                <input type="text" name="last-name" id="last-name" placeholder="Seu sobrenome" required>
+                </div>
+                <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Seu email" required>
+                </div>
+                <div class="form-group full-width">
+                <label for="message">Deixe sua mensagem: </label>
+                <textarea name="message" id="message" rcols="30" rows="10" placeholder="Sua mensagem" required >
+                </textarea>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit" target="_blank">Enviar mensagem</button>
+                </div>
+
+               </fieldset>
+        </div>
+            
+        </div>
+
+    </section>
+
+    <footer class="white-bg footer">
+        <p><a href="https://beacons.ai/pinhorenan" rel="nofollow" target="_blank">Com &hearts; feito por Renan Pinho</a></p>
+    </footer>
+    
+</body>
+</html>
