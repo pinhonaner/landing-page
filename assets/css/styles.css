@@ -99,7 +99,7 @@ h3 {
 }
 
 h4 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 
 h5 {
@@ -122,26 +122,33 @@ h2 {
 }
 
 table {
-    width: 64rem;
-    min-width: 360px;
+    width: 100%;
     border-collapse: collapse;
 }
 
 table caption {
+    text-align: left;
     font-style: italic;
     font-size: 1.6rem;
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
-table td, table th {
-    text-align: left;
     padding: 0.5rem;
-    border: 0.1rem solid var(--light-gray-color);
 }
 
-tfoot td, thead th {
-    background: var(--light-gray-color);
+table td, table th  {
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color)
+}
+
+table tfoot td {
+    text-align: right;
+}
+
+table tfoot td, table thead th {
+    background-color: var(--light-gray-color);
+}
+
+textarea {
+    max-height: 20rem;
 }
 
 /* Menu */
@@ -329,9 +336,9 @@ tfoot td, thead th {
 
 .table-responsive {
     width: 100%;
-    overflow: hidden;
-    overflow-x: scroll;
+    overflow: auto;
 }
+
 
 /* Contact Form */
 
@@ -422,9 +429,6 @@ tfoot td, thead th {
     
 }
 
-.form-group ::placeholder {
-    color: var(--primary-color)
-}
 
 /* Footer */
 
@@ -436,7 +440,6 @@ tfoot td, thead th {
 
 .footer a {
     color: #666;
-    z-index: 1;
 }
 
 /* Media querries */
@@ -488,7 +491,9 @@ tfoot td, thead th {
 
     .contact-content {
         grid-template-rows: 1fr 0.5fr;
+        max-height: 40rem;
     }
+    
 }
 
 @media (max-width: 899px) {
@@ -584,12 +589,11 @@ tfoot td, thead th {
     }
 
     #contact {
-        position: relative;
     }
 
     .contact-content {
         grid-template-rows: 1fr 0.5fr;
-        position: relative;
+        max-height: 10rem;
     }
 
     .contact.form {
