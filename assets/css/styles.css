@@ -65,7 +65,7 @@
 /* Elements */
 
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -76,6 +76,7 @@ html {
 }
 
 body {
+    width: 100%;
     max-width: 100%;
     max-height: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -319,8 +320,15 @@ textarea {
     gap: var(--gap);
 }
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--gap);
+}
+
 .gallery-img {
-    width: 100%;
+    width: 36rem;
+    height: 36rem;
     max-width: 36rem;
     max-height: 36rem;
     overflow: hidden;
@@ -452,8 +460,18 @@ textarea {
         grid-template-columns: 1fr;
     }
 
+    .intro-content {
+        margin-top: 15rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .grid {
-        grid-template-columns:  1fr 1fr;
+        grid-template-columns:  1fr;
+        padding-top: 10rem;
+        gap: 15rem;
     }
     
     .section {
@@ -488,15 +506,22 @@ textarea {
     .gallery-img img {
         width: 100%;
         height: 100%;
+        max-height: 360px;
+        max-height: 360px;
     }
 
     .grid-one-content {
-        top: 2rem;
+        gap: var(--gap);
+        top: 20rem;
     }
 
     .contact-content {
         grid-template-rows: 1fr 0.5fr;
         max-height: 120rem;
+    }
+
+    .table-responsive {
+        margin-top: 10rem;
     }
     
 }
@@ -528,9 +553,13 @@ textarea {
         height: auto;
     }
 
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
     .gallery-img {
-        width: 100%;
-        width: 100%;
+        width: auto;
+        width: auto;
         max-width: 100%;
         max-height: 100%;
     }
@@ -538,6 +567,8 @@ textarea {
     .gallery-img img {
         width: 100%;
         height: 100%;
+        max-width: 360px;
+        max-width: 360px;
     }
 
     .menu {
