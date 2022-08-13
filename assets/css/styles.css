@@ -71,7 +71,7 @@
 }
 
 html {
-    font-size: 62.5%; /* Calibrando o 'rem' */
+    font-size: 62.5%; /* 'rem' calibration */
     scroll-behavior: smooth;
 }
 
@@ -576,7 +576,7 @@ tfoot td, thead th {
 
     .close-menu:checked~.close-menu-label::after {
         display: block;
-        content:'×';
+        content:'x';
     }
 
     .grid-one-content {
